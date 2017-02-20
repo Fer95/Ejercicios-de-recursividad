@@ -1,10 +1,8 @@
-def invertir(lista,lista2):
+def invertir(lista):
     if lista==[]:
         return lista
     else:
-        lista2=invertir(lista[:-1],lista2)[0]
-        return lista2
+        return [lista[-1]]+invertir(lista[:-1])
 lista=[1,2,3,4,5,6]
-lista2=[]
-print(invertir(lista,lista2))
+print(invertir(lista))
     
