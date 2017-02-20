@@ -1,0 +1,8 @@
+def dividir(n,m):
+    if m>n:
+        return 0
+    else:
+        return dividir(n-m,m)+1
+n=int(input());
+m=int(input());
+print(dividir(n,m))
